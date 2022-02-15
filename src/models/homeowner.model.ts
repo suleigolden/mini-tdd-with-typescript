@@ -58,4 +58,6 @@ HomeownerSchema.methods.comparePassword = async function (
   return bcrypt.compare(candidatePassword, homeOwner.password).catch((e) => false);
 };
 
-export default mongoose.model<HomeownerDocument>("Homeowner", HomeownerSchema);
+// export default mongoose.model<HomeownerDocument>("Homeowner", HomeownerSchema);
+const HomeownerModel = mongoose.model<HomeownerDocument>("Homeowner", HomeownerSchema);
+export default HomeownerModel;
