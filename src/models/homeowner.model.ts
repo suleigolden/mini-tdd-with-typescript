@@ -7,7 +7,7 @@ export interface HomeownerInput {
   lastName: string;
   address: string;
   mobile: string;
-  isActive: boolean;
+  isActive?: boolean;
   password: string;
 }
 
